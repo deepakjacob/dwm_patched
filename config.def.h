@@ -45,7 +45,7 @@ static Sp scratchpads[] = {
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 /* grid of tags */
-#define DRAWCLASSICTAGS             1 << 0
+#define DRAWCLASSICTAGS             1 << 1
 #define DRAWTAGGRID                 1 << 1
 
 #define SWITCHTAG_UP                1 << 0
