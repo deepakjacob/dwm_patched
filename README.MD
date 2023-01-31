@@ -1,6 +1,6 @@
 This dwm 6.4 (712d663, 2023-01-28) is forked from the original dwm repo at [DWM](https://git.suckless.org/dwm).
 
-For a short period of time I had been using [dwm flexipatch](https://github.com/bakkeby/dwm-flexipatch) which was difficult to maintain.
+For a short period of time I had been using [dwm flexipatch](https://github.com/bakkeby/dwm-flexipatch) which was difficult to understand and make changes.
 
 Refer to [https://dwm.suckless.org/](https://dwm.suckless.org/) for details on the dwm window manager, how to install it and how it works.
 Browsing patches? There is a [map of patches](https://coggle.it/diagram/X9IiSSM6PTWOM9Wz) diagram which tries to organise patches into categories.
