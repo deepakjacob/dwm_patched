@@ -11,8 +11,8 @@ static const int showsystray        = 0;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int user_bh            = 28;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
-static const char *fonts[]          = { "Inconsolata Nerd Font Mono:size=12" };
-static const char dmenufont[]       = "Inconsolata Nerd Font Mono:size=12";
+static const char *fonts[]          = { "Iosevka Nerd Font Mono:size=12" };
+static const char dmenufont[]       = "Iosevka Nerd Font Mono:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -32,13 +32,9 @@ typedef struct {
 	const void *cmd;
 } Sp;
 const char *spcmd1[] = {"st", "-n", "spterm", "-g", "120x34", NULL };
-const char *spcmd2[] = {"st", "-n", "spfm", "-g", "144x41", "-e", "ranger", NULL };
-const char *spcmd3[] = {"keepassxc", NULL };
 static Sp scratchpads[] = {
 	/* name          cmd  */
 	{"spterm",      spcmd1},
-	{"spranger",    spcmd2},
-	{"keepassxc",   spcmd3},
 };
 
 /* tagging */
@@ -69,8 +65,6 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 	{ NULL,		    "spterm",		NULL,		    SPTAG(0),		  1,			     -1 },
-	{ NULL,		    "spfm",		  NULL,		    SPTAG(1),		  1,			     -1 },
-	{ NULL,		    "keepassxc",NULL,		    SPTAG(2),		  0,			     -1 },
 };
 
 /* layout(s) */
